@@ -16,7 +16,7 @@ interface IButtonProps {
 export const Button = styled(Link) <IButtonProps>`
   border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
   background: ${({ primary }) => (
-    primary ? colors.primary.green01 : colors.gray.grayDark07
+    primary ? colors.primary.yellow01 : colors.gray.grayDark07
   )};
   color: ${({ dark }) => (
     dark ? colors.gray.grayDark07 : colors.gray.white

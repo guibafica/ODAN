@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   *::selection {
-    background: ${colors.primary.green01};
+    background: #333;
     color: ${colors.gray.white};
   }
 
@@ -41,7 +41,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html::-webkit-scrollbar-thumb {
-    background: ${colors.primary.green01};
+    background: #FCDD26;
   }
 `;
 

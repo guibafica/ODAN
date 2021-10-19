@@ -1,20 +1,16 @@
 const colors = {
   primary: {
-    green01: '#01bf71', // PRIMARY
-    lightGreen01: '#01bf7198', // PRIMARY
-    green02: '#21f866', // TEXTO
-    green03: '#09f755',
-    green04: '#00fb51',
-    green05: '#03d361',
-    green06: '#06ad3b',
+    yellow01: '#FCDD26', // PRIMARY
   },
   gray: {
     black: '#000000',
     white: '#FFFFFF',
 
-    dark01: '#BFBFC0',
-    dark02: '#7E7E81',
-    dark03: '#4C4C4C',
+    dark01: '#232323',
+    dark02: '#BFBFC0',
+    dark03: '#7E7E81',
+    dark04: '#4C4C4C',
+
     light01: '#C9D0D8',
     light02: '#EAEDF0',
     light03: '#F9FAFB',

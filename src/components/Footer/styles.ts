@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-// import colors from '../../utils/colors';
+import colors from '../../utils/colors';
 
 export const Container = styled.div`
-  background: yellow;
+  background: ${colors.primary.yellow01};
   height: 4px;
   position: sticky;
   bottom: 0;
