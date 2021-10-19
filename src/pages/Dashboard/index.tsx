@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 
+import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 import HomeSection from '../../sections/HomeSection';
@@ -15,6 +16,8 @@ const Dashboard: React.FC = () => {
 
   return (
     <Fragment>
+      <Header />
+
       <HomeSection />
 
       <Footer />
