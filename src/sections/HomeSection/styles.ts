@@ -29,12 +29,8 @@ export const Content = styled.div`
   @media screen and (max-width: 700px) {
     width: 100%;
     align-items: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
 `;
 
-export const ContentText = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-`;

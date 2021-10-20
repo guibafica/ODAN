@@ -4,6 +4,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 import HomeSection from '../../sections/HomeSection';
+import ParentsSection from '../../sections/ParentsSection';
 
 const Dashboard: React.FC = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const Dashboard: React.FC = () => {
       <Header />
 
       <HomeSection />
+      <ParentsSection />
 
       <Footer />
     </Fragment>
