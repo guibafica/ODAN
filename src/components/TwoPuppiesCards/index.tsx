@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaSyringe } from 'react-icons/fa';
 
 import Text from '../../components/Text';
 import colors from '../../utils/colors';
@@ -13,6 +14,9 @@ interface IPuppiesCardsProps {
   tutorOne: string;
   addressOne: string;
   functionOne: string;
+  vaccineOneOne: boolean;
+  vaccineTwoOne: boolean;
+  vaccineThreeOne: boolean;
 
   picTwo: string;
   nameTwo: string;
@@ -21,6 +25,9 @@ interface IPuppiesCardsProps {
   tutorTwo: string;
   addressTwo: string;
   functionTwo: string;
+  vaccineOneTwo: boolean;
+  vaccineTwoTwo: boolean;
+  vaccineThreeTwo: boolean;
 }
 
 const TwoPuppiesCards: React.FC<IPuppiesCardsProps> = ({
@@ -31,6 +38,9 @@ const TwoPuppiesCards: React.FC<IPuppiesCardsProps> = ({
   tutorOne,
   addressOne,
   functionOne,
+  vaccineOneOne,
+  vaccineTwoOne,
+  vaccineThreeOne,
   picTwo,
   nameTwo,
   ageTwo,
@@ -38,13 +48,26 @@ const TwoPuppiesCards: React.FC<IPuppiesCardsProps> = ({
   tutorTwo,
   addressTwo,
   functionTwo,
+  vaccineOneTwo,
+  vaccineTwoTwo,
+  vaccineThreeTwo,
 }) => {
   return (
     <>
       <Styles.Container>
         <Styles.PuppiesLeftCard>
           <Styles.ImgDiv>
-            <Styles.PuppiesLeftImg src={picOne} />
+            <Styles.PuppiesLeftImgDiv>
+              <Styles.PuppiesLeftImg src={picOne} />
+
+              <Styles.VaccineLeftDiv>
+                <FaSyringe color={vaccineOneOne ? colors.gray.white : colors.gray.grayLight02} />
+
+                <FaSyringe color={vaccineTwoOne ? colors.gray.white : colors.gray.grayLight02} />
+
+                <FaSyringe color={vaccineThreeOne ? colors.gray.white : colors.gray.grayLight02} />
+              </Styles.VaccineLeftDiv>
+            </Styles.PuppiesLeftImgDiv>
           </Styles.ImgDiv>
 
           <Styles.InfoLeftDiv>
@@ -184,7 +207,17 @@ const TwoPuppiesCards: React.FC<IPuppiesCardsProps> = ({
 
         <Styles.PuppiesRightCard>
           <Styles.ImgDiv>
-            <Styles.PuppiesRightImg src={picTwo} />
+            <Styles.PuppiesRightImgDiv>
+              <Styles.PuppiesRightImg src={picTwo} />
+
+              <Styles.VaccineRightDiv>
+                <FaSyringe color={vaccineOneTwo ? colors.gray.white : colors.gray.grayLight02} />
+
+                <FaSyringe color={vaccineTwoTwo ? colors.gray.white : colors.gray.grayLight02} />
+
+                <FaSyringe color={vaccineThreeTwo ? colors.gray.white : colors.gray.grayLight02} />
+              </Styles.VaccineRightDiv>
+            </Styles.PuppiesRightImgDiv>
           </Styles.ImgDiv>
 
           <Styles.InfoRightDiv>

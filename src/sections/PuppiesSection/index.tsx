@@ -43,6 +43,9 @@ const PuppiesSection: React.FC = () => {
             tutorOne="Barbara"
             addressOne="Canavieiras - BA"
             functionOne="Cão Guarda"
+            vaccineOneOne={true}
+            vaccineTwoOne={true}
+            vaccineThreeOne={true}
 
             picTwo="https://img.clasf.com.br/2020/06/17/Venda-filhote-Pastor-Belga-Malinois-20200617232258.4984330015.jpg"
             ageTwo="5 meses"
@@ -51,6 +54,9 @@ const PuppiesSection: React.FC = () => {
             tutorTwo="Jhon Doe"
             addressTwo="S.C. Cabrália - BA"
             functionTwo="Cão Guarda"
+            vaccineOneTwo={true}
+            vaccineTwoTwo={false}
+            vaccineThreeTwo={false}
           />
         </Styles.Content>
       </Styles.Container>

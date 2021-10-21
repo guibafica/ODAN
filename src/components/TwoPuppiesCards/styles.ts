@@ -9,6 +9,10 @@ export const Container = styled.div`
   justify-content: space-between;
   width: 100%;
   margin-bottom: 3rem;
+
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+  }
 `;
 
 export const PuppiesLeftCard = styled.div`
@@ -21,6 +25,15 @@ export const PuppiesLeftCard = styled.div`
   width: 49%;
   height: 300px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+
+  @media screen and (max-width: 870px) {
+    flex-direction: column;
+    height: 95vh;
+  }
+
+  @media screen and (max-width: 650px) {
+    width: 90%;
+  }
 `;
 
 export const PuppiesRightCard = styled.div`
@@ -33,13 +46,30 @@ export const PuppiesRightCard = styled.div`
   width: 49%;
   height: 300px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+
+  @media screen and (max-width: 870px) {
+    flex-direction: column;
+    height: 95vh;
+  }
+
+
+  @media screen and (max-width: 650px) {
+    width: 90%;
+    margin-top: 2rem;
+  }
 `;
 
 export const ImgDiv = styled.div`
   height: 100%;
   width: 40%;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 870px) {
+    width: 90%;
+  }
 `;
 
 export const InfoLeftDiv = styled.div`
@@ -55,6 +85,13 @@ export const InfoLeftDiv = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 870px) {
+    width: 100%;
+    margin-right: 0;
+    padding-left: 1.3rem;
+    border: none;
+  }
 `;
 
 export const InfoRightDiv = styled.div`
@@ -70,28 +107,85 @@ export const InfoRightDiv = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 870px) {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 1.3rem;
+    border: none;
+  }
 `;
 
-export const PuppiesLeftImg = styled.img`
+export const PuppiesLeftImgDiv = styled.div`
   width: 100%;
   height: 90%;
-  object-fit: cover;
   border-right: 10px solid ${colors.gray.light01};
   border-top: 10px solid ${colors.gray.light01};
   border-bottom: 10px solid ${colors.gray.light01};
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
+  background-color: ${colors.gray.light01};
+
+  @media screen and (max-width: 870px) {
+    height: 100%;
+    border-right: 10px solid ${colors.gray.light01};
+    border-left: 10px solid ${colors.gray.light01};
+    border-bottom: 10px solid ${colors.gray.light01};
+    border-top: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
 `;
 
-export const PuppiesRightImg = styled.img`
+export const PuppiesRightImgDiv = styled.div`
   width: 100%;
   height: 90%;
-  object-fit: cover;
   border-left: 10px solid ${colors.gray.light01};
   border-top: 10px solid ${colors.gray.light01};
   border-bottom: 10px solid ${colors.gray.light01};
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
+  background-color: ${colors.gray.light01};
+
+  @media screen and (max-width: 870px) {
+    height: 100%;
+    border-right: 10px solid ${colors.gray.light01};
+    border-left: 10px solid ${colors.gray.light01};
+    border-bottom: 10px solid ${colors.gray.light01};
+    border-top: none;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+`;
+
+export const PuppiesLeftImg = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+  @media screen and (max-width: 870px) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+`;
+
+export const PuppiesRightImg = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+
+  @media screen and (max-width: 870px) {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
 `;
 
 export const TextDiv = styled.div`
@@ -104,4 +198,51 @@ export const TextDiv = styled.div`
     border-top: 1px solid ${colors.gray.light02};
     padding-top: 10px;
   }
+
+  @media screen and (max-width: 870px) {
+    justify-content: space-between;
+  }
 `;
+
+export const VaccineLeftDiv = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -38px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 2;
+  background-image: linear-gradient(to right, #00000080, #00000000);
+
+  @media screen and (max-width: 870px) {
+    background: #00000080;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+`;
+
+export const VaccineRightDiv = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -38px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 2;
+  background-image: linear-gradient(to left, #00000080, #00000000);
+
+  @media screen and (max-width: 870px) {
+    background: #00000080;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+`;
+
+
