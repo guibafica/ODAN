@@ -29,7 +29,7 @@ export const WavyShape = styled.div`
   display: inline-block;
   position: relative;
   width: 100%;
-  padding-bottom: 20%;
+  padding-bottom: 3%;
   vertical-align: middle;
   overflow: hidden;
 `;
