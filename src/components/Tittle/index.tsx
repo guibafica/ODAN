@@ -8,18 +8,20 @@ import * as Styles from './styles';
 
 interface ITittleProps {
   text: string;
+  iconColor?: string;
+  textColor?: string;
 }
 
-const Tittle: React.FC<ITittleProps> = ({ text }) => {
+const Tittle: React.FC<ITittleProps> = ({ text, iconColor, textColor }) => {
   return (
     <>
       <Styles.Container>
-        <IoMdPaw color={colors.primary.yellow01} size={35} />
+        <IoMdPaw color={iconColor ? iconColor : colors.primary.yellow01} size={35} />
 
         <Text
           text={text}
           align="center"
-          color={colors.gray.dark04}
+          color={textColor ? textColor : colors.gray.dark04}
           size={18}
           weight="700"
           fontFamily="Roboto Slab"
@@ -28,7 +30,7 @@ const Tittle: React.FC<ITittleProps> = ({ text }) => {
           marginRight={2}
         />
 
-        <IoMdPaw color={colors.primary.yellow01} size={35} />
+        <IoMdPaw color={iconColor ? iconColor : colors.primary.yellow01} size={35} />
       </Styles.Container>
     </>
   );
