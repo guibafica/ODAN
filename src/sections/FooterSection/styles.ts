@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import contactBG from '../../assets/contact-bg.png';
-
 import colors from '../../utils/colors';
 
 export const Container = styled.div`

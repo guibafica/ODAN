@@ -1,9 +1,4 @@
 import React, { useCallback } from 'react';
-import { ImWhatsapp } from 'react-icons/im';
-
-import Text from '../../components/Text';
-
-import colors from '../../utils/colors';
 
 import * as Styles from './styles';
 
