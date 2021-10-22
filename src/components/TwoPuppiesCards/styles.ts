@@ -269,7 +269,8 @@ export const GenderLeftDiv = styled.div`
     justify-content: center;
     width: 30%;
     padding-left: 0;
-    margin-left: 0;
+    margin-left: 10px;
+
     margin-bottom: -38px;
     height: 38px;
   }
@@ -300,8 +301,8 @@ export const GenderRightDiv = styled.div`
     border-top-right-radius: 0;
     justify-content: center;
     width: 30%;
-    padding-left: 0;
-    margin-left: 0;
+    padding-left: 10px;
+    margin-left: 10px;
     margin-bottom: -38px;
     height: 38px;
   }

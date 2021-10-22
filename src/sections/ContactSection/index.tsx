@@ -10,7 +10,7 @@ import * as Styles from './styles';
 
 const ContactSection: React.FC = () => {
   const handleOpenWhatsapp = useCallback(() => {
-    const message = 'Olá Rodrigues, tenho um interesse em um dos filhotes!';
+    const message = 'Olá Rodrigues, tenho interesse em um dos filhotes!';
     const wppURL = `https://api.whatsapp.com/send?l=pt-BR&phone='557399966969'&text=${message}`;
 
     window.open(wppURL, '_blank')!.focus();
