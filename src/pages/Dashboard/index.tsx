@@ -7,6 +7,7 @@ import HomeSection from '../../sections/HomeSection';
 import ParentsSection from '../../sections/ParentsSection';
 import PuppiesSection from '../../sections/PuppiesSection';
 import ContactSection from '../../sections/ContactSection';
+import FooterSection from '../../sections/FooterSection';
 
 const Dashboard: React.FC = () => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const Dashboard: React.FC = () => {
       <ParentsSection />
       <PuppiesSection />
       <ContactSection />
+      <FooterSection />
 
       <Footer />
     </Fragment>
