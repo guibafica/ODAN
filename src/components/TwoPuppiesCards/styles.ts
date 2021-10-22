@@ -8,7 +8,8 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
+  max-width: 1366px;
 
   @media screen and (max-width: 650px) {
     flex-direction: column;
@@ -245,4 +246,49 @@ export const VaccineRightDiv = styled.div`
   }
 `;
 
+export const GenderLeftDiv = styled.div`
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: -38px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 2;
+  background-image: linear-gradient(to right, #00000080, #00000000);
 
+  @media screen and (max-width: 870px) {
+    background: #00000080;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    justify-content: center;
+    padding-left: 0px;
+  }
+`;
+
+export const GenderRightDiv = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: -38px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+
+  z-index: 2;
+  background-image: linear-gradient(to left, #00000080, #00000000);
+
+  @media screen and (max-width: 870px) {
+    background: #00000080;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    justify-content: center;
+    width: 30%;
+    padding-left: 0px;
+  }
+`;

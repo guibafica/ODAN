@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaSyringe } from 'react-icons/fa';
+import { BiFemaleSign, BiMaleSign } from 'react-icons/bi';
 
 import Text from '../../components/Text';
 import colors from '../../utils/colors';
@@ -17,6 +18,7 @@ interface IPuppiesCardsProps {
   vaccineOneOne: boolean;
   vaccineTwoOne: boolean;
   vaccineThreeOne: boolean;
+  genderOne: 'M' | 'F';
 
   picTwo: string;
   nameTwo: string;
@@ -28,6 +30,7 @@ interface IPuppiesCardsProps {
   vaccineOneTwo: boolean;
   vaccineTwoTwo: boolean;
   vaccineThreeTwo: boolean;
+  genderTwo: 'M' | 'F';
 }
 
 const TwoPuppiesCards: React.FC<IPuppiesCardsProps> = ({
@@ -41,6 +44,7 @@ const TwoPuppiesCards: React.FC<IPuppiesCardsProps> = ({
   vaccineOneOne,
   vaccineTwoOne,
   vaccineThreeOne,
+  genderOne,
   picTwo,
   nameTwo,
   ageTwo,
@@ -51,6 +55,7 @@ const TwoPuppiesCards: React.FC<IPuppiesCardsProps> = ({
   vaccineOneTwo,
   vaccineTwoTwo,
   vaccineThreeTwo,
+  genderTwo,
 }) => {
   return (
     <>
@@ -58,6 +63,14 @@ const TwoPuppiesCards: React.FC<IPuppiesCardsProps> = ({
         <Styles.PuppiesLeftCard>
           <Styles.ImgDiv>
             <Styles.PuppiesLeftImgDiv>
+              <Styles.GenderLeftDiv>
+                {genderOne === 'M' ? (
+                  <BiMaleSign color={colors.gray.white} />
+                ) : (
+                  <BiFemaleSign color={colors.gray.white} />
+                )}
+              </Styles.GenderLeftDiv>
+
               <Styles.PuppiesLeftImg src={picOne} />
 
               <Styles.VaccineLeftDiv>
@@ -208,6 +221,14 @@ const TwoPuppiesCards: React.FC<IPuppiesCardsProps> = ({
         <Styles.PuppiesRightCard>
           <Styles.ImgDiv>
             <Styles.PuppiesRightImgDiv>
+              <Styles.GenderRightDiv>
+                {genderTwo === 'M' ? (
+                  <BiMaleSign color={colors.gray.white} />
+                ) : (
+                  <BiFemaleSign color={colors.gray.white} />
+                )}
+              </Styles.GenderRightDiv>
+
               <Styles.PuppiesRightImg src={picTwo} />
 
               <Styles.VaccineRightDiv>

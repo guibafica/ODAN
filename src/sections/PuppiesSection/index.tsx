@@ -46,6 +46,7 @@ const PuppiesSection: React.FC = () => {
             vaccineOneOne={true}
             vaccineTwoOne={true}
             vaccineThreeOne={true}
+            genderOne='M'
 
             picTwo="https://img.clasf.com.br/2020/06/17/Venda-filhote-Pastor-Belga-Malinois-20200617232258.4984330015.jpg"
             ageTwo="5 meses"
@@ -57,6 +58,33 @@ const PuppiesSection: React.FC = () => {
             vaccineOneTwo={true}
             vaccineTwoTwo={false}
             vaccineThreeTwo={false}
+            genderTwo='F'
+          />
+
+          <TwoPuppiesCards
+            picOne="https://zipanuncios.com.br/img/2508154/1554569879218987.jpeg"
+            nameOne="Sheik"
+            ageOne="5 meses"
+            breedOne="Pastor Belga"
+            tutorOne="Barbara"
+            addressOne="Canavieiras - BA"
+            functionOne="Cão Guarda"
+            vaccineOneOne={true}
+            vaccineTwoOne={true}
+            vaccineThreeOne={false}
+            genderOne='M'
+
+            picTwo="https://http2.mlstatic.com/D_NQ_NP_738026-MLB28549535410_112018-O.jpg"
+            ageTwo="5 meses"
+            nameTwo="Vitória"
+            breedTwo="Pastor Belga"
+            tutorTwo="Jhon Doe"
+            addressTwo="S.C. Cabrália - BA"
+            functionTwo="Cão Guarda"
+            vaccineOneTwo={true}
+            vaccineTwoTwo={true}
+            vaccineThreeTwo={false}
+            genderTwo='F'
           />
         </Styles.Content>
       </Styles.Container>
