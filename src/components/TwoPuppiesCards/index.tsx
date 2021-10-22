@@ -65,9 +65,9 @@ const TwoPuppiesCards: React.FC<IPuppiesCardsProps> = ({
             <Styles.PuppiesLeftImgDiv>
               <Styles.GenderLeftDiv>
                 {genderOne === 'M' ? (
-                  <BiMaleSign color={colors.gray.white} />
+                  <BiMaleSign color={colors.gray.black} />
                 ) : (
-                  <BiFemaleSign color={colors.gray.white} />
+                  <BiFemaleSign color={colors.gray.black} />
                 )}
               </Styles.GenderLeftDiv>
 
@@ -223,9 +223,9 @@ const TwoPuppiesCards: React.FC<IPuppiesCardsProps> = ({
             <Styles.PuppiesRightImgDiv>
               <Styles.GenderRightDiv>
                 {genderTwo === 'M' ? (
-                  <BiMaleSign color={colors.gray.white} />
+                  <BiMaleSign color={colors.gray.black} />
                 ) : (
-                  <BiFemaleSign color={colors.gray.white} />
+                  <BiFemaleSign color={colors.gray.black} />
                 )}
               </Styles.GenderRightDiv>
 

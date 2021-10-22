@@ -33,7 +33,7 @@ export const PuppiesLeftCard = styled.div`
   }
 
   @media screen and (max-width: 650px) {
-    width: 90%;
+    width: 100%;
   }
 `;
 
@@ -55,7 +55,7 @@ export const PuppiesRightCard = styled.div`
 
 
   @media screen and (max-width: 650px) {
-    width: 90%;
+    width: 100%;
     margin-top: 2rem;
   }
 `;
@@ -67,6 +67,7 @@ export const ImgDiv = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   @media screen and (max-width: 870px) {
     width: 90%;
@@ -247,48 +248,61 @@ export const VaccineRightDiv = styled.div`
 `;
 
 export const GenderLeftDiv = styled.div`
-  width: 30%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  margin-bottom: -38px;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  justify-content: center;
+  margin-bottom: -50px;
+  padding-left: 13px;
+  margin-left: -20px;
   position: relative;
   z-index: 2;
-  background-image: linear-gradient(to right, #00000080, #00000000);
+  background: ${colors.primary.yellow01};
 
   @media screen and (max-width: 870px) {
-    background: #00000080;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     justify-content: center;
-    padding-left: 0px;
+    width: 30%;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: -38px;
+    height: 38px;
   }
 `;
 
 export const GenderRightDiv = styled.div`
-  width: 100%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
-  margin-bottom: -38px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  justify-content: center;
+  margin-bottom: -50px;
+  padding-right: 13px;
+  margin-left: 88%;
   position: relative;
-
   z-index: 2;
-  background-image: linear-gradient(to left, #00000080, #00000000);
+  background: ${colors.primary.yellow01};
+
+  @media screen and (max-width: 1350px) {
+    margin-left: 84%;
+  }
 
   @media screen and (max-width: 870px) {
-    background: #00000080;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     justify-content: center;
     width: 30%;
-    padding-left: 0px;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: -38px;
+    height: 38px;
   }
 `;
