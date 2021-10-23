@@ -2,6 +2,13 @@ import React from 'react';
 
 import Text from '../../components/Text';
 import TwoPuppiesCards from '../../components/TwoPuppiesCards';
+import OnePuppiesCard from '../../components/OnePuppiesCard';
+
+import AnaCristina from '../../assets/puppiesPics/AnaCristina.jpeg';
+import JPaulo from '../../assets/puppiesPics/JPaulo.jpeg';
+import Mel from '../../assets/puppiesPics/Mel.jpeg';
+import Paula from '../../assets/puppiesPics/Paula.jpeg';
+import PauloVentura from '../../assets/puppiesPics/PauloVentura.jpeg';
 
 import colors from '../../utils/colors';
 
@@ -36,55 +43,69 @@ const PuppiesSection: React.FC = () => {
 
         <Styles.Content>
           <TwoPuppiesCards
-            picOne="https://s2.glbimg.com/K6CLJhAUpWNBJzQWW71DoynHyhk=/0x0:1280x853/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/U/y/ptufKMRGehwvUEG7VBQw/whatsapp-image-2020-12-02-at-10.30.54.jpeg"
-            nameOne="Sheik"
-            ageOne="5 meses"
+            picOne={PauloVentura}
+            nameOne="Sem Registro"
+            ageOne="Sem Registro"
             breedOne="Pastor Belga"
-            tutorOne="Barbara"
-            addressOne="Canavieiras - BA"
-            functionOne="Cão Guarda"
-            vaccineOneOne={true}
-            vaccineTwoOne={true}
-            vaccineThreeOne={true}
-            genderOne='M'
-
-            picTwo="https://img.clasf.com.br/2020/06/17/Venda-filhote-Pastor-Belga-Malinois-20200617232258.4984330015.jpg"
-            ageTwo="5 meses"
-            nameTwo="Vitória"
-            breedTwo="Pastor Belga"
-            tutorTwo="Jhon Doe"
-            addressTwo="S.C. Cabrália - BA"
-            functionTwo="Cão Guarda"
-            vaccineOneTwo={true}
-            vaccineTwoTwo={false}
-            vaccineThreeTwo={false}
-            genderTwo='F'
-          />
-
-          <TwoPuppiesCards
-            picOne="https://zipanuncios.com.br/img/2508154/1554569879218987.jpeg"
-            nameOne="Sheik"
-            ageOne="5 meses"
-            breedOne="Pastor Belga"
-            tutorOne="Barbara"
-            addressOne="Canavieiras - BA"
-            functionOne="Cão Guarda"
-            vaccineOneOne={true}
-            vaccineTwoOne={true}
+            tutorOne="Paulo Ventura"
+            addressOne="Sem Registro"
+            functionOne="Sem Registro"
+            vaccineOneOne={false}
+            vaccineTwoOne={false}
             vaccineThreeOne={false}
             genderOne='M'
 
-            picTwo="https://http2.mlstatic.com/D_NQ_NP_738026-MLB28549535410_112018-O.jpg"
-            ageTwo="5 meses"
-            nameTwo="Vitória"
+            picTwo={AnaCristina}
+            ageTwo="Sem Registro"
+            nameTwo="Xangô"
             breedTwo="Pastor Belga"
-            tutorTwo="Jhon Doe"
-            addressTwo="S.C. Cabrália - BA"
-            functionTwo="Cão Guarda"
-            vaccineOneTwo={true}
-            vaccineTwoTwo={true}
+            tutorTwo="Ana Cristina"
+            addressTwo="Sem Registro"
+            functionTwo="Sem Registro"
+            vaccineOneTwo={false}
+            vaccineTwoTwo={false}
             vaccineThreeTwo={false}
-            genderTwo='F'
+            genderTwo='M'
+          />
+
+          <TwoPuppiesCards
+            picOne={Paula}
+            nameOne="Victoria"
+            ageOne="Sem Registro"
+            breedOne="Pastor Belga"
+            tutorOne="Paula"
+            addressOne="Sem Registro"
+            functionOne="Cão Guarda"
+            vaccineOneOne={false}
+            vaccineTwoOne={false}
+            vaccineThreeOne={false}
+            genderOne='F'
+
+            picTwo={JPaulo}
+            ageTwo="Sem Registro"
+            nameTwo="Sem Registro"
+            breedTwo="Pastor Belga"
+            tutorTwo="J. Paulo"
+            addressTwo="Salvador - BA"
+            functionTwo="Sem Registro"
+            vaccineOneTwo={false}
+            vaccineTwoTwo={false}
+            vaccineThreeTwo={false}
+            genderTwo='M'
+          />
+
+          <OnePuppiesCard
+            pic={Mel}
+            name="Mel"
+            age="Sem Registro"
+            breed="Pastor Belga"
+            tutor="ST PM Rodrigues"
+            address="S.C. Cabrália"
+            functionProps="Sem Registro"
+            vaccineOne={false}
+            vaccineTwo={false}
+            vaccineThree={false}
+            gender='F'
           />
         </Styles.Content>
       </Styles.Container>
