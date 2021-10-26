@@ -10,7 +10,7 @@ import * as Styles from './styles';
 interface IPuppiesCardsProps {
   pic: string;
   name: string;
-  age: string;
+  birth: string;
   breed: string;
   tutor: string;
   address: string;
@@ -24,7 +24,7 @@ interface IPuppiesCardsProps {
 const OnePuppiesCard: React.FC<IPuppiesCardsProps> = ({
   pic,
   name,
-  age,
+  birth,
   breed,
   tutor,
   address,
@@ -85,7 +85,7 @@ const OnePuppiesCard: React.FC<IPuppiesCardsProps> = ({
 
             <Styles.TextDiv>
               <Text
-                text="IDADE: "
+                text="NASCIMENTO: "
                 align="left"
                 color={colors.gray.dark03}
                 size={8}
@@ -95,7 +95,7 @@ const OnePuppiesCard: React.FC<IPuppiesCardsProps> = ({
               />
 
               <Text
-                text={age}
+                text={birth}
                 align="left"
                 color={colors.gray.dark04}
                 size={10}

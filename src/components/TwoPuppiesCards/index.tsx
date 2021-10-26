@@ -10,7 +10,7 @@ import * as Styles from './styles';
 interface IPuppiesCardsProps {
   picOne: string;
   nameOne: string;
-  ageOne: string;
+  birthOne: string;
   breedOne: string;
   tutorOne: string;
   addressOne: string;
@@ -22,7 +22,7 @@ interface IPuppiesCardsProps {
 
   picTwo: string;
   nameTwo: string;
-  ageTwo: string;
+  birthTwo: string;
   breedTwo: string;
   tutorTwo: string;
   addressTwo: string;
@@ -36,7 +36,7 @@ interface IPuppiesCardsProps {
 const TwoPuppiesCards: React.FC<IPuppiesCardsProps> = ({
   picOne,
   nameOne,
-  ageOne,
+  birthOne,
   breedOne,
   tutorOne,
   addressOne,
@@ -47,7 +47,7 @@ const TwoPuppiesCards: React.FC<IPuppiesCardsProps> = ({
   genderOne,
   picTwo,
   nameTwo,
-  ageTwo,
+  birthTwo,
   breedTwo,
   tutorTwo,
   addressTwo,
@@ -108,7 +108,7 @@ const TwoPuppiesCards: React.FC<IPuppiesCardsProps> = ({
 
             <Styles.TextDiv>
               <Text
-                text="IDADE: "
+                text="NASCIMENTO: "
                 align="left"
                 color={colors.gray.dark03}
                 size={8}
@@ -118,7 +118,7 @@ const TwoPuppiesCards: React.FC<IPuppiesCardsProps> = ({
               />
 
               <Text
-                text={ageOne}
+                text={birthOne}
                 align="left"
                 color={colors.gray.dark04}
                 size={10}
@@ -266,7 +266,7 @@ const TwoPuppiesCards: React.FC<IPuppiesCardsProps> = ({
 
             <Styles.TextDiv>
               <Text
-                text="IDADE: "
+                text="NASCIMENTO: "
                 align="left"
                 color={colors.gray.dark03}
                 size={8}
@@ -276,7 +276,7 @@ const TwoPuppiesCards: React.FC<IPuppiesCardsProps> = ({
               />
 
               <Text
-                text={ageTwo}
+                text={birthTwo}
                 align="left"
                 color={colors.gray.dark04}
                 size={10}

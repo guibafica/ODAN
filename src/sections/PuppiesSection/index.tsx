@@ -5,10 +5,13 @@ import TwoPuppiesCards from '../../components/TwoPuppiesCards';
 import OnePuppiesCard from '../../components/OnePuppiesCard';
 
 import AnaCristina from '../../assets/puppiesPics/AnaCristina.jpeg';
+import sheik from '../../assets/puppiesPics/sheik.jpeg';
 import JPaulo from '../../assets/puppiesPics/JPaulo.jpeg';
 import Mel from '../../assets/puppiesPics/Mel.jpeg';
 import Paula from '../../assets/puppiesPics/Paula.jpeg';
 import PauloVentura from '../../assets/puppiesPics/PauloVentura.jpeg';
+
+import cameraPlaceholder from '../../assets/cameraPlaceholder02.png';
 
 import colors from '../../utils/colors';
 
@@ -43,26 +46,26 @@ const PuppiesSection: React.FC = () => {
 
         <Styles.Content>
           <TwoPuppiesCards
-            picOne={PauloVentura}
-            nameOne="Sem Registro"
-            ageOne="Sem Registro"
-            breedOne="Pastor Belga"
-            tutorOne="Paulo Ventura"
-            addressOne="Sem Registro"
-            functionOne="Sem Registro"
-            vaccineOneOne={false}
-            vaccineTwoOne={false}
+            picOne={sheik}
+            nameOne="Sheik"
+            birthOne="13/08/2021"
+            breedOne="Pastor Belga Malinois"
+            tutorOne="Barbara Bafica"
+            addressOne="Canavieiras - BA"
+            functionOne="Guarda e proteção"
+            vaccineOneOne={true}
+            vaccineTwoOne={true}
             vaccineThreeOne={false}
             genderOne='M'
 
             picTwo={AnaCristina}
-            ageTwo="Sem Registro"
+            birthTwo="13/08/2021"
             nameTwo="Xangô"
-            breedTwo="Pastor Belga"
+            breedTwo="Pastor Belga Malinois"
             tutorTwo="Ana Cristina"
-            addressTwo="Sem Registro"
-            functionTwo="Sem Registro"
-            vaccineOneTwo={false}
+            addressTwo="S.C. Cabrália - BA"
+            functionTwo="Guarda e proteção"
+            vaccineOneTwo={true}
             vaccineTwoTwo={false}
             vaccineThreeTwo={false}
             genderTwo='M'
@@ -71,38 +74,90 @@ const PuppiesSection: React.FC = () => {
           <TwoPuppiesCards
             picOne={Paula}
             nameOne="Victoria"
-            ageOne="Sem Registro"
-            breedOne="Pastor Belga"
+            birthOne="13/08/2021"
+            breedOne="Pastor Belga Malinois"
             tutorOne="Paula"
-            addressOne="Sem Registro"
-            functionOne="Cão Guarda"
-            vaccineOneOne={false}
+            addressOne="S.C. Cabrália - BA"
+            functionOne="Guarda e proteção"
+            vaccineOneOne={true}
             vaccineTwoOne={false}
             vaccineThreeOne={false}
             genderOne='F'
 
             picTwo={JPaulo}
-            ageTwo="Sem Registro"
+            birthTwo="13/08/2021"
             nameTwo="Sem Registro"
-            breedTwo="Pastor Belga"
+            breedTwo="Pastor Belga Malinois"
             tutorTwo="J. Paulo"
             addressTwo="Salvador - BA"
-            functionTwo="Sem Registro"
-            vaccineOneTwo={false}
+            functionTwo="Faro de entorpecentes"
+            vaccineOneTwo={true}
             vaccineTwoTwo={false}
             vaccineThreeTwo={false}
             genderTwo='M'
           />
 
+          <TwoPuppiesCards
+            picOne={PauloVentura}
+            nameOne="Lions"
+            birthOne="13/08/2021"
+            breedOne="Pastor Belga Malinois"
+            tutorOne="Paulo Ventura"
+            addressOne="Porto Seguro - BA"
+            functionOne="Guarda e proteção"
+            vaccineOneOne={true}
+            vaccineTwoOne={false}
+            vaccineThreeOne={false}
+            genderOne='M'
+
+            picTwo={Mel}
+            birthTwo="13/08/2021"
+            nameTwo="Mel"
+            breedTwo="Pastor Belga Malinois"
+            tutorTwo="ST PM Rodrigues"
+            addressTwo="S.C. Cabrália - BA"
+            functionTwo="Faro de entorpecentes"
+            vaccineOneTwo={true}
+            vaccineTwoTwo={false}
+            vaccineThreeTwo={false}
+            genderTwo='F'
+          />
+
+          <TwoPuppiesCards
+            picOne={cameraPlaceholder}
+            nameOne="Aquires"
+            birthOne="13/08/2021"
+            breedOne="Pastor Belga Malinois"
+            tutorOne="CAEMA"
+            addressOne="S.C. Cabrália - BA"
+            functionOne="Guarda e proteção"
+            vaccineOneOne={true}
+            vaccineTwoOne={false}
+            vaccineThreeOne={false}
+            genderOne='M'
+
+            picTwo={cameraPlaceholder}
+            birthTwo="13/08/2021"
+            nameTwo="Akira"
+            breedTwo="Pastor Belga Malinois"
+            tutorTwo="CAEMA"
+            addressTwo="S.C. Cabrália - BA"
+            functionTwo="Faro de entorpecentes"
+            vaccineOneTwo={true}
+            vaccineTwoTwo={false}
+            vaccineThreeTwo={false}
+            genderTwo='F'
+          />
+
           <OnePuppiesCard
-            pic={Mel}
-            name="Mel"
-            age="Sem Registro"
-            breed="Pastor Belga"
-            tutor="ST PM Rodrigues"
-            address="S.C. Cabrália"
-            functionProps="Sem Registro"
-            vaccineOne={false}
+            pic={cameraPlaceholder}
+            name="Agatha"
+            birth="13/08/2021"
+            breed="Pastor Belga Malinois"
+            tutor="Magda"
+            address="S.C. Cabrália - BA"
+            functionProps="Guarda e proteção"
+            vaccineOne={true}
             vaccineTwo={false}
             vaccineThree={false}
             gender='F'
