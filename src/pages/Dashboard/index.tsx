@@ -13,7 +13,11 @@ const Dashboard: React.FC = () => {
   useEffect(() => {
     console.log(' ');
     console.log(' ');
-    console.log('Made with ❤️ by Guilherme Bafica.');
+    console.log(
+      '%c Made with ❤️ by Guilherme Bafica.',
+      'color: #01bf71; background: #010606; border-radius: 4px; padding: 10px; font-size: 12px; font-weight: bold'
+    );
+    console.log('guilhermebafica.com.br');
     console.log(' ');
     console.log(' ');
   }, []);
